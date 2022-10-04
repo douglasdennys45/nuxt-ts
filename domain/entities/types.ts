@@ -6,14 +6,14 @@ export enum Method {
   put = 'put'
 }
 
-export type HttpRequest = {
+export interface HttpRequest {
   url: string
-  method: Method,
-  body?: any,
+  method: Method
+  body?: any
   headers?: any
 }
 
-export type HttpResponse = {
+export interface HttpResponse {
   statusCode: number
   body: any
 }
