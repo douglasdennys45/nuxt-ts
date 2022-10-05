@@ -1,0 +1,151 @@
+@media all {
+    .page-break {
+        display: none;
+    }
+}
+
+@media print {
+    html {
+        font-size: 14px !important
+    }
+    
+    body {
+        margin: 0 !important;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+        line-height: 1.5 !important;
+        color: #212529 !important;
+        text-align: left !important;
+    }
+}
+
+@media print {
+    .page-break {
+        margin-top: 1rem;
+        display: block;
+        page-break-before: auto;
+    }
+}
+
+@page {
+    size: auto;
+    margin: 20mm;
+}
+
+.page-printable .h3, .page-printable h3 {
+    font-size: 1.75rem !important;
+    margin-bottom: 0.5rem !important;
+    line-height: 1.2 !important;
+}
+
+.page-printable .h6, .page-printable h6 {
+    font-size: 1rem !important;
+    margin-bottom: .5rem !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+}
+
+.page-printable .row {
+    margin: 0
+}
+
+.page-printable .report {
+    width: 29.2cm !important;
+}
+
+.page-printable .report_header p {
+    margin: 0px 15px 5px 15px !important;
+    line-height: 1.1 !important;
+}
+
+.page-printable .vertical-center {
+    align-self: center !important;
+}
+
+.page-printable .header-table-report {
+    font-weight: bolder !important;
+}
+
+.page-printable .header-table-report div {
+    border: 2px solid rgba(43, 43, 43, 0.7) !important;
+    background-color: rgba(43, 43, 43, 0.08) !important
+}
+
+.page-printable .body-table-report div {
+    border: 2px solid rgba(43, 43, 43, 0.7) !important;
+}
+
+.page-printable .border-report {
+    border: 2px solid rgba(43, 43, 43, 0.7) !important;
+}
+
+.page-printable .right-border-round {
+    border-radius: 10px 0px 0px 10px !important;
+}
+
+.page-printable .left-border-round {
+    border-radius: 0px 10px 10px 0px !important;
+}
+
+.page-printable .top-border-round {
+    border-radius: 10px 10px 0px 00px !important;
+}
+
+.page-printable .bottom-border-round {
+    border-radius: 0px 00px 10px 10px !important;
+}
+
+.page-printable .nw-border-round {
+    border-radius: 7px 0px 0px 0px !important;
+}
+
+.page-printable .ne-border-round {
+    border-radius: 0px 7px 0px 0px !important;
+}
+
+.page-printable .sw-border-round {
+    border-radius: 0px 0px 0px 7px !important;
+}
+
+.page-printable .se-border-round {
+    border-radius: 0px 0px 7px 0px !important;
+}
+
+.page-printable .border-round {
+    border-radius: 7px 7px 7px 7px !important;
+}
+
+.page-printable .logo {
+    height: 54px !important;
+    margin: 3px !important;
+}
+
+.page-printable .small-icon {
+    height: 12px !important;
+}
+
+.page-printable .text-bold {
+    font-weight: bold !important;
+}
+
+.page-printable .products-list th {
+    background-color: black !important;
+    color: #fff !important;
+    border: 2px solid #c8c8c8 !important;
+}
+.page-printable .products-list tbody tr {
+    border-bottom: 2px solid #c8c8c8 !important;
+}
+
+.page-printable .line {
+    border-bottom: 1px solid #000 !important;
+}
+
+.page-printable .dashline {
+    border-bottom: 2px dashed #000 !important;
+}
+
+.page-printable .promiss p {
+    margin-bottom: 0 !important;
+}
