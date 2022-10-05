@@ -1,4 +1,4 @@
-# Structure boilerplate Node.JS
+# Structure boilerplate Nuxt.JS
 
 Boilerplate to streamline the development process with some out-of-the-box use cases
 
