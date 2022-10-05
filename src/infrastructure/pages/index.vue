@@ -1,12 +1,13 @@
 <template>
   <NuxtLayout name="admin">
-    <template #header> Some header template content. </template>
-    The rest of the page
+    <Login @login="login" />
   </NuxtLayout>
 </template>
 
 <script setup>
-definePageMeta({
-  layout: false
-})
+import Login from '~~/src/infrastructure/components/login.vue'
+
+function login () {
+  console.log('deu certo')
+}
 </script>

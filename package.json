@@ -8,10 +8,15 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint ./",
     "lint:fix": "npm run lint -- --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "vitest",
+    "test:coverage": "npm run test -- --coverage"
   },
   "devDependencies": {
+    "@nuxt/test-utils-edge": "^3.0.0-rc.12-27746784.92ff066",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@vitejs/plugin-vue": "^3.1.2",
+    "@vue/test-utils": "^2.1.0",
     "eslint": "^8.24.0",
     "eslint-config-standard-with-typescript": "^23.0.0",
     "eslint-plugin-import": "^2.26.0",
@@ -21,6 +26,7 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "nuxt": "3.0.0-rc.11",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "vitest": "^0.23.4"
   }
 }
