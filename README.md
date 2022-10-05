@@ -1,42 +1,51 @@
-# Nuxt 3 Minimal Starter
+# Structure boilerplate Node.JS
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Boilerplate to streamline the development process with some out-of-the-box use cases
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
+## Documentation structure folder
+![App Screenshot](https://herbertograca.files.wordpress.com/2017/03/hexagonal-arch-4-ports-adapters2.png?w=708)
 
 ```bash
-npm run dev
+├── test                      # Tests
+├── src                       # Application source code folder
+│   ├── domain                # Domain application  
+│   │   ├── entities          # Class folder and business rule validators
+│   │   │   └── errors        # Class default errors
+│   │   ├── contracts         # Folder that will indirectly connect the business layer with the external layer
+│   │   │   └── repositories  # Repository interface folder, where it will link the business layer with the external layer
+│   │   └── usecases          # Folder that contains the most system-specific business rules. This is where all the system use cases are implemented
+│   ├── infrastructure        # Folder is made up of tools like database, UI, etc. In this layer, the idea is to have as little code as possible, just enough to interconnect the layers and inject the necessary implementations into the inner layers.
+│   │   ├── ui                # UI configuration pages
+│   │   ├── http              # Http Client
 ```
 
-## Production
+## Requirements
 
-Build the application for production:
+To run the project, install the following software
+
+* Docker >= 1.40+
+* Node.JS >= 16+
+
+## Run project
+
+To run the project, run the following command
 
 ```bash
-npm run build
+  npm i && npm run dev
 ```
 
-Locally preview production build:
+## Run tests
+
+To run the tests, run the following command
 
 ```bash
-npm run preview
+  npm run test:coverage
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+## Feedback
+
+If you have any feedback, please let us know via **douglasdennys45@gmail.com**
+
+## Authors
+
+- [@Douglas Dennys](https://www.github.com/douglasdennys45)
