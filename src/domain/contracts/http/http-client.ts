@@ -1,4 +1,4 @@
-import { HttpRequest, HttpResponse } from '~~/domain/entities'
+import { HttpRequest, HttpResponse } from '~~/src/domain/entities'
 
 export interface HttpClient {
   request: (payload: HttpClient.Request) => Promise<HttpClient.Response>
