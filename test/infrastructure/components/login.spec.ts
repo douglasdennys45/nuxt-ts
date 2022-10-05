@@ -1,4 +1,4 @@
-import { describe, expect, test } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { mount, VueWrapper } from '@vue/test-utils'
 
 import Login from '@/infrastructure/components/login.vue'
@@ -8,14 +8,16 @@ const mountLogin = (): VueWrapper => {
 }
 
 describe('Components login.vue', () => {
-  test('should mount the component', async () => {
+  it('should mount the component', async () => {
     const wrapper = mountLogin()
+
     expect(wrapper.vm).toBeDefined()
     expect(wrapper.text()).toContain('Login')
   })
 
-  test('should emit the event save with itens object', async () => {
+  it('should emit the event save with itens object', async () => {
     const wrapper = mountLogin()
+
     await wrapper.get('#save').trigger('click')
 
     expect(wrapper.emitted().login).toBeTruthy()
