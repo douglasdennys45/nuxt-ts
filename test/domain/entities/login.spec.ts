@@ -8,7 +8,7 @@ const loginRequest = (): LoginRequest => ({
   password: faker.random.alphaNumeric()
 })
 
-describe.skip('Entity login.ts', () => {
+describe('Entity login.ts', () => {
   it('should return the validated data', () => {
     const request = loginRequest()
     const login = new Login(request)
