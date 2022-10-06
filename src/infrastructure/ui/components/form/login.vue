@@ -56,6 +56,6 @@
 </template>
 
 <script setup lang="ts">
-import logo from '~~/src/infrastructure/ui/assets/images/logo.svg'
+import logo from '@/ui/assets/images/logo.svg'
 defineEmits(['login'])
 </script>
