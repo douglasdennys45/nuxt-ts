@@ -10,7 +10,6 @@
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install",
     "test": "vitest --run",
-    "test:staged": "npm run test -- --changed",
     "test:coverage": "npm run test -- --coverage"
   },
   "devDependencies": {
