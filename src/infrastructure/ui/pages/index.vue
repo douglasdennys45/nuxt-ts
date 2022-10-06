@@ -6,11 +6,9 @@
 
 <script setup>
 import LoginForm from '~~/src/infrastructure/ui/components/form/login.vue'
-import { FetchHttpClient } from '~~/src/infrastructure/http'
-import { Login } from '~~/src/domain/usecases'
+import { mountLogin } from '@/factories/domain/usecases'
 
-const http = new FetchHttpClient()
-const service = new Login(http)
+const service = mountLogin()
 
 async function login () {
   try {
