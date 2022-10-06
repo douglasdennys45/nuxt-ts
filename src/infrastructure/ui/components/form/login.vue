@@ -48,14 +48,9 @@
       </h5> -->
     </div>
   </form>
-
-    <!-- <div>Login</div>
-    <input type="text" name="username" />
-    <input type="password" name="password" />
-    <button id="save" type="button" @click="$emit('login', {})">Login</button> -->
 </template>
 
 <script setup lang="ts">
-import logo from '@/ui/assets/images/logo.svg'
+import logo from '@/assets/images/logo.svg'
 defineEmits(['login'])
 </script>

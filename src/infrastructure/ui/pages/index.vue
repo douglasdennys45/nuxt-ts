@@ -6,7 +6,7 @@
 
 <script setup>
 import LoginForm from '~~/src/infrastructure/ui/components/form/login.vue'
-import { mountLogin } from '@/factories/domain/usecases'
+import { mountLogin } from '~~/src/infrastructure/factories/domain/usecases'
 
 const service = mountLogin()
 
