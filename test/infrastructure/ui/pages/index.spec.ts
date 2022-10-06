@@ -7,7 +7,7 @@ import { describe, test } from 'vitest'
 //   return mount(Index, {})
 // }
 
-describe('Pages Index.vue', () => {
+describe.skip('Pages Index.vue', () => {
   test('should mount the page', () => {
     // const wrapper = mountIndex()
     // expect(wrapper.vm).toBeDefined()
