@@ -9,7 +9,7 @@
     "lint": "eslint ./",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install",
-    "test": "vitest",
+    "test": "vitest --run",
     "test:coverage": "npm run test -- --coverage"
   },
   "devDependencies": {
